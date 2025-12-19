@@ -1,9 +1,103 @@
-.slider-section { background: #fff5ee; padding: 60px 0; text-align: center; }
-.slider-section h2 { margin-bottom: 40px; font-size: 28px; }
-.slider-container { display: flex; align-items: center; justify-content: center; gap: 20px; }
-.slide-card { background: white; padding: 40px; border-radius: 15px; display: flex; gap: 30px; width: 800px; text-align: left; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
-.slide-img { flex: 1; background: #ddd; border-radius: 10px; min-height: 200px; }
-.slide-content { flex: 2; }
-.slide-content h3 { color: #333; margin-bottom: 15px; }
-.slide-content p { font-size: 14px; line-height: 1.6; color: #555; }
-.nav-btn { background: #ea541e; color: white; border: none; width: 40px; height: 40px; border-radius: 50%; cursor: pointer; font-size: 18px; }
+.slider-section {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 20px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.slider-title {
+  font-size: 34px;
+  margin-bottom: 50px;
+  color: #222;
+}
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide-card {
+  width: 850px;
+  min-height: 320px;
+  background: white;
+  border-radius: 18px;
+  padding: 36px;
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+}
+
+.slide-img img {
+  width: 240px;
+  height: 200px;
+  object-fit: contain;
+}
+
+.slide-content h3 {
+  font-size: 26px;
+  color: #d35400;
+  text-align: left;
+  margin-bottom: 14px;
+}
+
+.slide-content p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #444;
+  text-align: left;
+}
+
+.nav-btn {
+  background: #fff;
+  border: none;
+  font-size: 32px;
+  cursor: pointer;
+  padding: 12px 18px;
+  border-radius: 50%;
+  color: #d35400;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.nav-btn:hover {
+  background: #d35400;
+  color: #fff;
+}
+
+.left {
+  margin-right: 18px;
+}
+
+.right {
+  margin-left: 18px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width: 1024px) {
+  .slide-card {
+    width: 650px;
+    flex-direction: column;
+  }
+}
+
+@media(max-width: 700px) {
+  .slide-card {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .slide-img img {
+    width: 200px;
+    height: 160px;
+  }
+  
+  .slider-title {
+    font-size: 26px;
+  }
+}

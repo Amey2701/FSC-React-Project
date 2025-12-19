@@ -32,7 +32,7 @@ const Features = () => {
           <div className="flexclass">
             <div className="img_section">
               <img
-                src="https://www.icicicilombard.com/docs/default-source/assets/car-landing-new/images/instant-motor-claims.svg"
+                src="https://www.icicilombard.com/docs/default-source/assets/car-landing-new/images/instant-motor-claims.svg"
                 alt="instant motor claims"
               />
             </div>

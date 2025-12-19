@@ -4,6 +4,7 @@ import {
   setMobile,
   sendOtp,
   verifyOtp,
+  setName,
 } from "../../features/auth/authSlice";
 
 import "./LoginModal.css";
@@ -16,20 +17,34 @@ const LoginModal = () => {
 
   return (
     <div className="login-backdrop" onClick={() => dispatch(closeModal())}>
-      <div
-        className="login-box"
-        onClick={(e) => e.stopPropagation()}
-      >
-        <button
-          className="login-close"
-          onClick={() => dispatch(closeModal())}
-        >
+      <div className="login-box" onClick={(e) => e.stopPropagation()}>
+        
+        <button className="login-close" onClick={() => dispatch(closeModal())}>
           ✕
         </button>
 
         <h2>Sign In</h2>
 
-        {!auth.otpSent && (
+        {!auth.nameEntered && (
+          <>
+            <input
+              type="text"
+              placeholder="Your Name"
+              value={auth.name}
+              onChange={(e) => dispatch(setName(e.target.value))}
+              className="login-input"
+            />
+
+            <button
+              className="login-btn"
+              onClick={() => auth.name.trim() !== "" && dispatch(sendOtp("skip mobile"))}
+            >
+              Next
+            </button>
+          </>
+        )}
+
+        {auth.nameEntered && !auth.otpSent && (
           <>
             <input
               type="tel"
@@ -51,10 +66,8 @@ const LoginModal = () => {
         {auth.otpSent && !auth.otpVerified && (
           <>
             <h3>OTP Sent to {auth.mobile}</h3>
-            <button
-              className="login-btn"
-              onClick={() => dispatch(verifyOtp())}
-            >
+
+            <button className="login-btn" onClick={() => dispatch(verifyOtp())}>
               Auto Verify OTP
             </button>
           </>
@@ -62,7 +75,8 @@ const LoginModal = () => {
 
         {auth.otpVerified && (
           <>
-            <h3>Welcome {auth.userName}</h3>
+            <h3>Welcome {auth.name}</h3>
+
             <button
               className="login-btn"
               onClick={() => dispatch(closeModal())}

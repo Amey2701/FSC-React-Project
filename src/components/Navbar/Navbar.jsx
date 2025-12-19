@@ -1,17 +1,22 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { useDispatch } from "react-redux";
-import { openModal } from "../../features/auth/authSlice";
+
+import { useDispatch, useSelector } from "react-redux";
+import { openModal, logout } from "../../features/auth/authSlice";
+
 import "./Navbar.css";
 
 const Navbar = () => {
   const dispatch = useDispatch();
+
+  const auth = useSelector(state => state.auth);
 
   return (
     <nav className="navbar">
 
       {/* ================= TOP BAR ================= */}
       <div className="nav-top">
+
         <div className="nav-left-sm">
           <span>Call Back</span>
           <span className="dot">•</span>
@@ -20,20 +25,53 @@ const Navbar = () => {
         </div>
 
         <div className="nav-right-sm">
+
           <span>Help</span>
           <span>Info Centre</span>
           <span>Investor Relations</span>
 
-          <button className="btn-advisor">Become an advisor</button>
-
-          <button
-            className="btn-login"
-            onClick={() => dispatch(openModal())}
-          >
-            Login
+          <button className="btn-advisor">
+            Become an advisor
           </button>
+
+
+          {/* -------- BEFORE LOGIN → SHOW Login button -------- */}
+          {!auth.loggedIn && (
+            <button
+              className="btn-login"
+              onClick={() => dispatch(openModal())}
+            >
+              Login
+            </button>
+          )}
+
+          {/* -------- AFTER LOGIN → SHOW name + Logout -------- */}
+          {auth.loggedIn && (
+            <div style={{
+              display: "flex",
+              alignItems: "center",
+              gap: "14px",
+              fontSize: "15px",
+              fontWeight: "600"
+            }}>
+
+              <span>
+                Hello, {auth.name}
+              </span>
+
+              <button
+                className="btn-login"
+                onClick={() => dispatch(logout())}
+              >
+                Logout
+              </button>
+
+            </div>
+          )}
+
         </div>
       </div>
+
 
       {/* ================= MAIN NAV ================= */}
       <div className="nav-main">
@@ -46,10 +84,11 @@ const Navbar = () => {
           />
         </div>
 
+
         {/* MENUS */}
         <ul className="nav-menu">
 
-          {/* MOTOR INSURANCE MEGAMENU */}
+          {/* ================= MOTOR INSURANCE MEGAMENU ================= */}
           <li className="nav-parent">
             Motor Insurance ▾
 
@@ -89,6 +128,7 @@ const Navbar = () => {
 
             </div>
           </li>
+
 
           <li>Health Insurance ▾</li>
           <li>Travel Insurance ▾</li>
