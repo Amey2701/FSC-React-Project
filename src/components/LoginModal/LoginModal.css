@@ -1,0 +1,57 @@
+.login-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(5, 5, 5, 0.65);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 7000;
+}
+
+.login-box {
+  width: 500px;
+  background: white;
+  border-radius: 14px;
+  padding: 38px 28px;
+  position: relative;
+  animation: popup 0.2s ease;
+}
+
+@keyframes popup {
+  from { transform: scale(0.92); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.login-input {
+  width: 100%;
+  height: 54px;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  padding: 0 14px;
+  font-size: 18px;
+}
+
+.login-btn {
+  margin-top: 24px;
+  width: 100%;
+  height: 56px;
+  background: #d35400;
+  border-radius: 12px;
+  font-size: 20px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.login-close {
+  position: absolute;
+  right: 18px;
+  top: 18px;
+  font-size: 22px;
+  background: white;
+  border-radius: 50%;
+  height: 36px;
+  width: 36px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}

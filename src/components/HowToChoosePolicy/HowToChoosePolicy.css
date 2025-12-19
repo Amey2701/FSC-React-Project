@@ -1,0 +1,86 @@
+.choose-policy-section {
+  background: #04345c;
+  padding: 80px 100px;
+  color: #ffffff;
+}
+
+.choose-policy-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.choose-policy-container h2 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+/* Grid */
+.policy-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-bottom: 40px;
+}
+
+/* Card layout */
+.policy-card {
+  display: flex;
+  gap: 18px;
+  background: #043d6d;
+  border-radius: 14px;
+  padding: 26px 26px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Number */
+.step-number {
+  font-size: 28px;
+  font-weight: 700;
+  color: #ff7a1a;
+  line-height: 1;
+  min-width: 30px;
+}
+
+/* Content */
+.card-content h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.card-content p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #dce6f0;
+}
+
+/* Footer text */
+.policy-footer-text {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #dce6f0;
+  max-width: 1000px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .policy-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .choose-policy-section {
+    padding: 60px 20px;
+  }
+
+  .policy-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .choose-policy-container h2 {
+    font-size: 26px;
+  }
+}

@@ -1,0 +1,54 @@
+.info-wrapper {
+  padding: 60px 150px;
+  background: #ffffff;
+}
+
+/* Core layout */
+.info-block {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  margin-bottom: 90px;
+}
+
+/* Left / Right helpers */
+.info-img.left,
+.info-text.left {
+  order: 1;
+}
+
+.info-img.right,
+.info-text.right {
+  order: 2;
+}
+
+/* Text */
+.info-text {
+  flex: 1;
+}
+
+.info-text h3 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.info-text p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Image */
+.info-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-img img {
+  max-width: 100%;
+  height: auto;
+}

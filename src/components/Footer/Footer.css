@@ -1,0 +1,233 @@
+.footer {
+  width: 100%;
+  background: #ffffff;
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* ------------------------------------------------------ */
+/* TOP COMPANY INFORMATION SECTION                        */
+/* ------------------------------------------------------ */
+
+.footer-top {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px 20px 35px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.footer-company {
+  line-height: 1.7;
+  color: #333;
+  font-size: 14px;
+}
+
+/* ------------------------------------------------------ */
+/* SOCIAL + APP SECTION                                   */
+/* ------------------------------------------------------ */
+
+.footer-social-apps {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+
+/* social icon group */
+.social-icons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icons img {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+  cursor: pointer;
+  transition: 0.25s ease;
+  filter: grayscale(20%);
+}
+
+.social-icons img:hover {
+  opacity: 0.6;
+  transform: scale(1.07);
+  filter: grayscale(0%);
+}
+
+.app-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.app-links img {
+  height: 32px;
+  cursor: pointer;
+}
+
+/* ------------------------------------------------------ */
+/* DROPDOWN SYSTEM                                        */
+/* ------------------------------------------------------ */
+
+.footer-dropdown {
+  max-width: 1400px;
+  margin: 0 auto;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.dropdown-header {
+  padding: 22px 20px;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  color: #383838;
+  display: flex;
+  justify-content: space-between;
+  user-select: none;
+  transition: 0.3s ease;
+}
+
+.dropdown-header:hover {
+  background: #fafafa;
+}
+
+/* ------------------------------------------------------ */
+/* GRID LISTS WITHIN DROPDOWN                             */
+/* ------------------------------------------------------ */
+
+.dropdown-grid {
+  padding: 25px 20px 35px 20px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 25px;
+  background: #fff;
+}
+
+.dropdown-grid ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown-grid li {
+  padding: 6px 0;
+  cursor: default;
+  font-size: 14px;
+  color: #4d4d4d;
+}
+
+.dropdown-grid li strong {
+  color: #222;
+  font-size: 15px;
+  padding-bottom: 6px;
+  display: inline-block;
+}
+
+.dropdown-grid li:hover:not(:first-child) {
+  color: #0065ff;
+}
+
+/* ------------------------------------------------------ */
+/* BOTTOM SECTION                                         */
+/* ------------------------------------------------------ */
+
+.footer-bottom {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: left;
+  color: #444;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.trust-logos {
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.trust-logos img {
+  height: 40px;
+  object-fit: contain;
+}
+
+/* ------------------------------------------------------ */
+/* RESPONSIVE DESIGN                                      */
+/* ------------------------------------------------------ */
+
+@media (max-width: 1024px) {
+  .dropdown-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer-social-apps {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  .dropdown-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-top {
+    text-align: left;
+  }
+
+  .trust-logos {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .social-icons img {
+    width: 22px;
+    height: 22px;
+  }
+
+  .footer-social-apps {
+    justify-content: flex-start;
+    gap: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dropdown-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dropdown-header {
+    font-size: 14px;
+    padding: 18px;
+  }
+
+  .app-links span {
+    font-size: 13px;
+  }
+
+  .footer-social-apps {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .social-icons {
+    gap: 16px;
+  }
+}

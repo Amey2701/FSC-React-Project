@@ -1,0 +1,96 @@
+.how-it-works {
+  background: #fbf6e6;
+  padding: 90px 120px;
+}
+
+.how-it-works-container {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* LEFT IMAGE */
+.how-it-works-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.how-it-works-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* RIGHT CONTENT */
+.how-it-works-content {
+  flex: 1;
+}
+
+.how-it-works-content h2 {
+  font-size: 34px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 18px;
+}
+
+.intro-text {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+/* Bullet list */
+.how-it-works-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.how-it-works-list li {
+  position: relative;
+  padding-left: 26px;
+  margin-bottom: 16px;
+  font-size: 15px;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Arrow bullet */
+.how-it-works-list li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Network garage link */
+.how-it-works-list a {
+  color: #ff6a00;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.how-it-works-list a:hover {
+  text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .how-it-works {
+    padding: 60px 30px;
+  }
+
+  .how-it-works-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .how-it-works-content h2 {
+    font-size: 28px;
+  }
+}
