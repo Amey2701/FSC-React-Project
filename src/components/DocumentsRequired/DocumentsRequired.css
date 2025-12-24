@@ -1,0 +1,49 @@
+.docs-section {
+  width: 100%;
+  background: #023663;
+  color: white;
+  padding: 80px 60px;
+}
+
+.docs-title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+
+.docs-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.docs-left,
+.docs-right {
+  width: 50%;
+}
+
+.docs-block {
+  margin-bottom: 35px;
+}
+
+.docs-block h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.docs-block ul {
+  padding-left: 20px;
+  line-height: 1.8;
+}
+
+.docs-block ul li::marker {
+  color: orange;
+}
+
+.docs-image {
+  width: 380px;
+  margin-top: 40px;
+  display: block;
+}

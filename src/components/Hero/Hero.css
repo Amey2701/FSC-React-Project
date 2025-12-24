@@ -67,9 +67,9 @@
 .hero-img {
   position: absolute;
   bottom: 0;
-  left: 162%;                  /* correct optical center */
+  left: 170%;                  /* correct optical center */
   transform: translateX(-50%);
-  height: 490px;              /* balanced scale */
+  height: 510px;              /* balanced scale */
   width: auto;
   z-index: 1;
   pointer-events: none;
