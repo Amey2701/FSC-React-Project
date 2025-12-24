@@ -1,21 +1,27 @@
+/* =========================
+   HERO SECTION
+   ========================= */
+
 .hero-section {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   padding: 60px 120px 40px;
-  background: #ffffff;
+  background: #f5f5f5;
   position: relative;
   overflow: hidden;
 }
 
-/* LEFT SIDE */
+/* =========================
+   LEFT SIDE
+   ========================= */
+
 .hero-left {
-  max-width: 55%;
+  max-width: 50%;
   position: relative;
   padding-bottom: 140px; /* space for floating image */
 }
 
-/* Headings */
 .hero-left h1 {
   font-size: 52px;
   font-weight: 700;
@@ -36,7 +42,10 @@
   margin-bottom: 30px;
 }
 
-/* Features */
+/* =========================
+   FEATURE TAGS
+   ========================= */
+
 .hero-features {
   display: flex;
   flex-direction: column;
@@ -63,27 +72,33 @@
   border-radius: 4px;
 }
 
-/* ✅ PERSON IMAGE — GEOMETRICALLY CORRECT */
+/* =========================
+   FLOATING IMAGE
+   ========================= */
+
 .hero-img {
   position: absolute;
   bottom: 0;
-  left: 170%;                  /* correct optical center */
+  left: 130%;
   transform: translateX(-50%);
-  height: 510px;              /* balanced scale */
+  height: 510px;
   width: auto;
   z-index: 1;
   pointer-events: none;
 }
 
-/* RIGHT FORM CARD */
+/* =========================
+   RIGHT FORM CARD
+   ========================= */
+
 .hero-form-card {
   width: 470px;
   background: #ffffff;
   padding: 30px;
   border-radius: 14px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
-  border: 1px solid #eee;
-  z-index: 2; /* stays above image */
+  border: 2px solid #eee;
+  z-index: 2;
 }
 
 .hero-form-card label {
@@ -113,18 +128,50 @@
   text-decoration: underline;
 }
 
+/* =========================
+   STRONG CTA SHAKE
+   ========================= */
+
+@keyframes attentionCTA {
+  0%   { transform: translateX(0); }
+  6%   { transform: translateX(-6px); }
+  12%  { transform: translateX(6px); }
+  18%  { transform: translateX(-6px); }
+  24%  { transform: translateX(6px); }
+  30%  { transform: translateX(-5px); }
+  36%  { transform: translateX(5px); }
+  42%  { transform: translateX(-4px); }
+  48%  { transform: translateX(4px); }
+  54%  { transform: translateX(-3px); }
+  60%  { transform: translateX(3px); }
+  66%  { transform: translateX(0); }
+  100% { transform: translateX(0); }
+}
+
 .btn-get-quote {
   width: 100%;
   padding: 16px;
   background: #f26522;
-  color: white;
+  color: #ffffff;
   border: none;
   font-size: 17px;
   font-weight: 600;
   border-radius: 6px;
   cursor: pointer;
   margin-top: 10px;
+
+  /* Strong shake every 10 seconds */
+  animation: attentionCTA 10s cubic-bezier(.36,.07,.19,.97) infinite;
 }
+
+.btn-get-quote:hover {
+  animation: none;
+  background: #e45b1c;
+}
+
+/* =========================
+   CHECKBOXES
+   ========================= */
 
 .checkbox-group {
   display: flex;

@@ -3,46 +3,46 @@
   --dark: #181818;
 }
 
+/* ================= SCROLL NAV ================= */
+
 .scroll-nav-container {
   width: 100%;
+
+  /* ✅ ONLY THIS STICKS */
   position: sticky;
   top: 0;
-  z-index: 2000;
+  z-index: 6;
+
   background: #ffffff;
   border-bottom: 1px solid #e6e6e6;
   box-shadow: 0px 1px 6px rgba(0,0,0,0.06);
 }
+
+/* ================= INNER ================= */
 
 .scroll-nav-inner {
   width: 100%;
   max-width: 1600px;
   height: 62px;
   margin: 0 auto;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
+
   padding: 0px 40px;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
-/* UL: horizontal scroll – will not wrap */
+/* ================= LIST ================= */
 
 .scroll-nav-container ul {
   display: flex;
-  align-items: center;
   list-style: none;
-  margin: 0;
-  padding: 0;
-
-  flex: 1;
-  white-space: nowrap;
-
   gap: 35px;
 
+  white-space: nowrap;
   overflow-x: auto;
-  overflow-y: hidden;
-  flex-wrap: nowrap;
-
   scrollbar-width: none;
 }
 
@@ -54,25 +54,24 @@
   font-size: 17px;
   font-weight: 500;
   cursor: pointer;
-  padding: 7px 0px;
   color: var(--dark);
   position: relative;
-  transition: 0.2s;
+  padding: 7px 0;
 }
 
 .scroll-nav-container ul li:hover {
   color: var(--brand);
 }
 
+/* underline */
 .scroll-nav-container ul li::after {
   content: "";
   position: absolute;
   height: 3px;
-  width: 0%;
+  width: 0;
   background: var(--brand);
   bottom: -6px;
-  left: 60%;
-  border-radius: 3px;
+  left: 50%;
   transition: 0.2s;
 }
 
@@ -81,7 +80,7 @@
   left: 0;
 }
 
-/* CTA BUTTON */
+/* ================= CTA ================= */
 
 .scroll-nav-btn {
   background: var(--brand);
@@ -91,49 +90,20 @@
   font-size: 17px;
   padding: 12px 20px;
   cursor: pointer;
-  font-weight: 500;
   white-space: nowrap;
-  transition: 0.2s;
-
-  margin-left: 40px;
 }
 
 .scroll-nav-btn:hover {
   background: #e55a0e;
 }
 
-/* RESPONSIVE BREAKPOINTS */
-
-@media (max-width: 1200px) {
-  .scroll-nav-inner {
-    padding: 0px 20px;
-  }
-
-  .scroll-nav-container ul {
-    gap: 25px;
-  }
-
-  .scroll-nav-btn {
-    margin-left: 20px;
-  }
-}
-
-@media (max-width: 992px) {
-  .scroll-nav-container ul li {
-    font-size: 18px;
-  }
-
-  .scroll-nav-btn {
-    font-size: 18px;
-    padding: 10px 18px;
-  }
-}
+/* ================= RESPONSIVE ================= */
 
 @media (max-width: 850px) {
   .scroll-nav-btn {
     display: none;
   }
-  
+
   .scroll-nav-container ul {
     gap: 20px;
   }

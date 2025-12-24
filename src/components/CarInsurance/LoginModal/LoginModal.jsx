@@ -5,7 +5,7 @@ import {
   sendOtp,
   verifyOtp,
   setName,
-} from "../../features/auth/authSlice";
+} from "../../../features/auth/authSlice";
 
 import "./LoginModal.css";
 

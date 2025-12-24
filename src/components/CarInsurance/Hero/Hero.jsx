@@ -23,7 +23,7 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Man image */}
+        {/* Floating Person Image */}
         <img
           src="https://www.icicilombard.com/docs/default-source/apps/fwfresh/fw-landing/images/widget-men-vector.png"
           alt="Happy Customer"
@@ -56,7 +56,9 @@ const Hero = () => {
           className="input-field"
         />
 
-        <button className="btn-get-quote">Get quote</button>
+        <button className="btn-get-quote">
+          Get quote
+        </button>
 
         <div className="checkbox-group">
           <input type="checkbox" />

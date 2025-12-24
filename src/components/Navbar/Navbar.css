@@ -1,253 +1,182 @@
-/* RESET */
+/* ================= RESET ================= */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* NAVBAR WRAPPER */
+/* ================= NAVBAR WRAPPER ================= */
 .navbar {
   width: 100%;
   display: flex;
   flex-direction: column;
   font-family: Arial, Helvetica, sans-serif;
-  z-index: 2000;
+
   position: relative;
+  z-index: 1; /* ABOVE scroll nav */
 }
 
-/* ================= TOP SECTION ================= */
 
+/* ================= VARIANTS ================= */
+.navbar-default {
+  position: relative;
+  z-index: 2;
+}
+
+.navbar-car {
+  position: relative;
+  z-index: 3;
+}
+
+/* ================= TOP BAR ================= */
 .nav-top {
   background: #f5f5f5;
-  padding: 8px 80px;
-  font-size: 18px;
-  color: #222;
+  padding: 6px 80px;
+  font-size: 15px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-}
-
-/* TOP LEFT SECTION */
-.nav-left-sm {
-  display: flex;
   align-items: center;
-  gap: 6px;
 }
 
-.nav-left-sm span {
-  cursor: default;
-}
-
-.dot {
-  margin: 0 6px;
-  font-weight: bold;
-}
-
-.live-dot {
-  width: 8px;
-  height: 8px;
-  background: #10c539;
-  border-radius: 50%;
-  display: inline-block;
-}
-
-/* ================= TOP RIGHT ================= */
-
+.nav-left-sm,
 .nav-right-sm {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 12px;
 }
 
-.nav-right-sm span {
-  cursor: pointer;
+.dot {
+  margin: 0 4px;
+}
+
+.live-dot {
+  width: 7px;
+  height: 7px;
+  background: #10c539;
+  border-radius: 50%;
 }
 
 /* ================= BUTTONS ================= */
-
 .btn-advisor {
   background: #003a70;
-  color: white;
+  color: #fff;
   border: none;
-  padding: 7px 14px;
+  padding: 5px 12px;
   border-radius: 4px;
-  cursor: pointer;
 }
 
 .btn-login {
   background: #d54800;
-  color: white;
+  color: #fff;
   border: none;
-  padding: 7px 14px;
+  padding: 5px 12px;
   border-radius: 4px;
-  cursor: pointer;
 }
 
-/* USER PANEL WRAPPER (after login) */
-.user-panel {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-}
-
-.user-panel span {
-  font-size: 15px;
-  font-weight: 600;
-  color: #222;
-}
-
-/* ================= MAIN NAV BAR ================= */
-
+/* ================= MAIN NAV ================= */
 .nav-main {
   background: linear-gradient(to right, #cb3900, #df7f1a);
-  padding: 14px 80px;
+  padding: 10px 80px;
+
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+
+  position: relative;
+  z-index: 4;
 }
 
-/* LOGO */
-
-.nav-logo img {
-  height: 49px;
-  object-fit: contain;
-}
-
-/* =============== MENU LIST ================== */
-
+/* ================= MENU ================= */
 .nav-menu {
   display: flex;
+  gap: 26px;
   list-style: none;
-  gap: 32px;
-  font-size: 15px;
   color: white;
+  font-size: 14px;
 }
 
 .nav-menu > li {
-  cursor: pointer;
   position: relative;
-  padding: 8px 2px;
-}
-
-.nav-menu > li:hover {
-  opacity: 0.85;
+  cursor: pointer;
 }
 
 /* ================= MOTOR MEGAMENU ================= */
-
 .nav-parent {
   position: relative;
 }
 
-/* show while hovering parent OR menu itself */
+/* hover bridge */
+.nav-parent::after {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 100%;
+  width: calc(100% + 40px);
+  height: 20px;
+}
+
+/* DROPDOWN */
+.motor-megamenu {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  width: 420px;
+  background: #fff;
+  border-radius: 14px;
+  padding: 22px 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(6px);
+
+  z-index: 5;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.25);
+  transition: all 180ms ease;
+}
+
+/* SHOW */
 .nav-parent:hover .motor-megamenu,
 .motor-megamenu:hover {
   opacity: 1;
   visibility: visible;
-  transform: translateY(0px);
+  pointer-events: auto;
+  transform: translateY(0);
 }
 
-/* MEGADROPDOWN BOX */
-
-.motor-megamenu {
-  position: absolute;
-  left: 0;
-  top: 100%;
-
-  width: 420px;
-  background: #fff;
-
-  border-radius: 14px;
-  padding: 24px 28px;
-
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(10px);
-
-  transition:
-    opacity 180ms ease,
-    transform 180ms ease;
-
-  box-shadow: 0px 10px 40px rgba(0,0,0,0.12);
-}
-
-/* each row in megamenu */
+/* ITEMS */
 .motor-item {
   display: flex;
-  align-items: flex-start;
   gap: 14px;
 }
 
 .motor-item img {
-  width: 36px;
-  height: 36px;
-  object-fit: contain;
+  width: 34px;
+  height: 34px;
 }
 
 .motor-item a {
-  color: #222;
-  font-size: 15px;
+  font-weight: 700;
   text-decoration: none;
-  font-weight: bold;
+  color: #222;
 }
 
-.motor-item p {
-  font-size: 13px;
-  color: #777;
-  margin-top: 3px;
-}
-
-/* HOVER EFFECT LINK */
 .motor-item a:hover {
   color: #d35400;
 }
 
-/* ================= HELLO NAME + LOGOUT ================= */
-
-.nav-right-sm .btn-login.logout-btn {
-  background: #444;
-}
-
-.nav-right-sm .hello-text {
-  font-size: 15px;
-  font-weight: bold;
-  color: #222;
+.motor-item p {
+  font-size: 12px;
+  color: #666;
 }
 
 /* ================= RESPONSIVE ================= */
-
-@media(max-width: 1200px) {
-  .nav-top {
-    padding: 8px 40px;
-  }
-
+@media (max-width: 1200px) {
+  .nav-top,
   .nav-main {
-    padding: 14px 40px;
-  }
-
-  .nav-menu {
-    gap: 22px;
-  }
-}
-
-@media(max-width: 995px) {
-  .nav-menu {
-    gap: 14px;
-    font-size: 13px;
-  }
-
-  .motor-megamenu {
-    width: 350px;
-  }
-}
-
-@media(max-width: 768px) {
-
-  .motor-megamenu {
-    width: 300px;
+    padding: 10px 40px;
   }
 }
