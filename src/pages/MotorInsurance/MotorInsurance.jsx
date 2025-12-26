@@ -1,17 +1,23 @@
+import React from "react";
+import "./MotorInsurance.css";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 
-const BikeInsurance = () => {
+import MotorHero from "../../components/MotorInsurance/HeroSection/MotorHero";
+import VehicleInsuranceInfo from "../../components/MotorInsurance/VehicleInsuranceInfo/VehicleInsuranceInfo";
+import PlanComparison from "../../components/MotorInsurance/PlanComparison/PlanComparison";
+import WhatIsCovered from "../../components/MotorInsurance/WhatIsCovered/WhatIsCovered";
+
+const MotorInsurance = () => {
   return (
     <>
-      <Navbar />
-      <div style={{ paddingTop: "140px", textAlign: "center" }}>
-        <h1>Bike Insurance</h1>
-        <p>Page under development</p>
-      </div>
-      <Footer />
+    <Navbar />
+      <MotorHero/>
+      <VehicleInsuranceInfo/>
+      <PlanComparison/>
+      <WhatIsCovered/>
     </>
   );
 };
 
-export default BikeInsurance;
+export default MotorInsurance;

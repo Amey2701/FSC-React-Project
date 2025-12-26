@@ -3,7 +3,7 @@
 ================================ */
 .idv-section {
   background: #f7f6f4;
-  padding: 90px 0;
+  padding: 18px 0;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -19,7 +19,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 80px;
   align-items: center;
-  margin-bottom: 90px;
+  margin-bottom: 15px;
 }
 
 .idv-image img {

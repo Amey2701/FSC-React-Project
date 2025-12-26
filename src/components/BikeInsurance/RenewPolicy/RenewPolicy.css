@@ -1,0 +1,73 @@
+.renew-section {
+  padding: 18px 0;
+  background: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.renew-grid {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+.renew-left h2,
+.renew-right h2 {
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+
+.renew-left p,
+.renew-right p {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 18px;
+}
+
+.renew-steps div {
+  display: flex;
+  gap: 14px;
+  padding: 14px 0;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.renew-steps span {
+  color: #f26522;
+  font-weight: 700;
+}
+
+.renew-right ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.renew-right li {
+  margin-bottom: 12px;
+  padding-left: 26px;
+  position: relative;
+  font-size: 14px;
+  color: #555;
+}
+
+.renew-right li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #2dbb55;
+}
+
+.renew-right small {
+  display: block;
+  margin-top: 12px;
+  font-size: 12px;
+  color: #777;
+}
+
+@media (max-width: 992px) {
+  .renew-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,182 @@
+/* ======================================
+   COMMON BASE
+====================================== */
+.factors-section,
+.savings-section {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ======================================
+   FACTORS SECTION (BLUE)
+====================================== */
+.factors-section {
+  background: #05335f;
+  padding: 20px 0;
+  color: #ffffff;
+}
+
+.factors-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 48px;
+  align-items: flex-start;
+}
+
+/* LEFT HEADING */
+.factors-left h2 {
+  margin: 0 0 12px 0;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.3;
+  color: #ffffff;
+}
+
+/* RIGHT INTRO TEXT – FORCE WHITE */
+.factors-right p {
+  margin: 0 0 16px 0;
+  font-size: 15px;
+  color: #ffffff;        /* ✅ FIX */
+  opacity: 1;            /* ✅ FIX */
+}
+
+/* LIST */
+.factors-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.factors-list li {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #ffffff;        /* ✅ FIX */
+}
+
+/* CHECK ICON */
+.factors-list li::before {
+  content: "✔";
+  color: #2dbb55;
+  font-weight: 700;
+  margin-top: 2px;
+}
+
+/* ======================================
+   SAVINGS SECTION (WHITE)
+====================================== */
+.savings-section {
+  background: #ffffff;
+  padding: 56px 0;
+}
+
+.savings-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 64px;
+  align-items: flex-start;
+}
+
+/* LEFT */
+.savings-left h2 {
+  margin: 0 0 14px 0;
+  font-size: 36px;
+  font-weight: 700;
+  color: #222;
+  line-height: 1.25;
+}
+
+.savings-left p {
+  margin: 0;
+  font-size: 18px;
+  color: #555;
+  line-height: 1.7;
+  max-width: 480px;
+}
+
+/* ======================================
+   RIGHT ITEMS (TEXT-ONLY LAYOUT)
+====================================== */
+.saving-item {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 24px;
+  margin-bottom: 26px;
+  align-items: flex-start;
+}
+
+/* Hide icon safely */
+.saving-icon {
+  display: none;
+}
+
+/* LEFT TITLE */
+.saving-content h4 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #222;
+  line-height: 1.4;
+}
+
+/* RIGHT DESCRIPTION */
+.saving-content p {
+  margin: 0;
+  font-size: 16px;
+  color: #555;
+  line-height: 1.7;
+}
+
+/* LINKS */
+.saving-content a {
+  color: #f26522;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.saving-content a:hover {
+  text-decoration: none;
+}
+
+/* REMOVE LAST EXTRA SPACE */
+.saving-item:last-child {
+  margin-bottom: 0;
+}
+
+/* ======================================
+   RESPONSIVE
+====================================== */
+@media (max-width: 992px) {
+  .factors-grid,
+  .savings-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .factors-section,
+  .savings-section {
+    padding: 42px 0;
+  }
+
+  .saving-item {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .savings-left h2 {
+    font-size: 30px;
+  }
+
+  .savings-left p {
+    font-size: 16px;
+  }
+}

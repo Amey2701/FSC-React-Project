@@ -9,6 +9,10 @@ import KeyFeatures from "../../components/BikeInsurance/KeyFeatures/KeyFeatures"
 import HowToChoosePolicy from "../../components/BikeInsurance/HowToChoosePolicy/HowToChoosePolicy";
 import PremiumAndBuyingGuide from "../../components/BikeInsurance/PremiumAndBuyingGuide/PremiumAndBuyingGuide";
 import IdvAndZeroDepreciation from "../../components/BikeInsurance/IdvAndZeroDepreciation/IdvAndZeroDepreciation";
+import FactorsAndSavings from "../../components/BikeInsurance/FactorsAndSavings/FactorsAndSavings";
+import RenewPolicy from "../../components/BikeInsurance/RenewPolicy/RenewPolicy";
+import BlogArticles from "../../components/BikeInsurance/BlogArticles/BlogArticles";
+import PriceAndComparison from "../../components/BikeInsurance/PriceAndComparison/PriceAndComparison";
 
 const BikeInsurance = () => {
   return (
@@ -23,6 +27,10 @@ const BikeInsurance = () => {
       <HowToChoosePolicy />
       <PremiumAndBuyingGuide />
       <IdvAndZeroDepreciation />
+      <FactorsAndSavings />
+      <RenewPolicy />
+      <PriceAndComparison />
+      <BlogArticles />
       <Footer />
     </>
   );
