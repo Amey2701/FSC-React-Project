@@ -1,0 +1,80 @@
+/* SECTION */
+.why-choose-section {
+  background: #f5f5f5;
+  padding: 90px 0 70px;
+  text-align: center;
+}
+
+/* TITLE */
+.why-choose-section h2 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 14px;
+  color: #222;
+}
+
+/* SUBTITLE */
+.why-choose-desc {
+  max-width: 900px;
+  margin: 0 auto 70px;
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+  text-align: justify;      /* ✅ JUSTIFIED */
+  text-align-last: center;  /* keeps last line centered */
+}
+
+/* ROW */
+.why-choose-stats {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+}
+
+/* CARD */
+.choose-item {
+  width: 300px;
+  text-align: center;
+}
+
+.choose-item img {
+  height: 52px;
+  margin-bottom: 18px;
+}
+
+.choose-item h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.choose-item p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+  text-align: justify;      /* ✅ JUSTIFIED */
+}
+
+/* DIVIDER */
+.divider {
+  width: 1px;
+  height: 140px;
+  background: #dcdcdc;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .why-choose-stats {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .divider {
+    display: none;
+  }
+}

@@ -1,0 +1,47 @@
+.bike-info-section {
+  background: #ffffff;
+  padding: 80px 120px;
+}
+
+.bike-info-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+.bike-info-text {
+  flex: 1;
+}
+
+.bike-info-text h2 {
+  font-size: 34px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.bike-info-text p {
+  font-size: 18px;
+  color: #444;
+  line-height: 1.7;
+  margin-bottom: 18px;
+}
+
+.bike-info-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.bike-info-image img {
+  max-width: 420px;
+  width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .bike-info-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+}

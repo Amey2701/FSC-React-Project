@@ -23,6 +23,7 @@ import WhyBuyOnline from "../../components/CarInsurance/WhyBuyPolicyOnline/WhyBu
 import CarInsurancePremium from "../../components/CarInsurance/CarInsurancePremium/CarInsurancePremium";
 import SaveOnPremium from "../../components/CarInsurance/SaveOnPremium/SaveOnPremium";
 import DocumentsRequired from "../../components/CarInsurance/DocumentsRequired/DocumentsRequired";
+import CashlessGarage from "../../components/CarInsurance/CashlessGarage/CashlessGarage";
 
 const CarInsurance = () => {
   const show = useSelector((state) => state.auth.showModal);
@@ -79,26 +80,27 @@ const CarInsurance = () => {
       <KeyFeatures />
       <CoverageTabs />
 
-      <section ref={addonsRef} style={{ paddingTop: 120 }}>
+      <section ref={addonsRef}>
         <AddOnCovers />
       </section>
 
-      <section ref={policyRef} style={{ paddingTop: 120 }}>
+      <section ref={policyRef}>
         <HowItWorks />
       </section>
 
       <HowToChoosePolicy />
       <WhyBuyOnline />
 
-      <section ref={premiumRef} style={{ paddingTop: 120 }}>
+      <CashlessGarage />
+      <section ref={premiumRef}>
         <CarInsurancePremium />
       </section>
 
-      <section ref={saveRef} style={{ paddingTop: 120 }}>
+      <section ref={saveRef}>
         <SaveOnPremium />
       </section>
 
-      <section ref={faqRef} style={{ paddingTop: 120 }}>
+      <section ref={faqRef}>
         <DocumentsRequired />
       </section>
 

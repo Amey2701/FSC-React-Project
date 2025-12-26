@@ -1,0 +1,206 @@
+/* ===============================
+   SECTION BASE
+================================ */
+.premium-guide-section {
+  background: #ffffff;
+  padding: 90px 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container.ils {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ===============================
+   COMMON HEADINGS
+================================ */
+.section-title {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 600;
+  margin-bottom: 14px;
+  color: #222;
+}
+
+.section-subtitle {
+  text-align: left;
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 60px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+/* ===============================
+   COMPARE GRID
+================================ */
+.compare-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 42px 90px;
+  margin-bottom: 90px;
+}
+
+.compare-item {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  max-width: 520px;
+}
+
+.step {
+  background: #f26522;
+  color: #fff;
+  min-width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 2px;
+}
+
+.compare-item h4 {
+  margin-bottom: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #222;
+}
+
+.compare-item p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+  text-align: left;
+}
+
+/* ===============================
+   ADD-ON SECTION
+================================ */
+.addon-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  margin-bottom: 90px;
+}
+
+.addon-left h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 14px;
+  color: #222;
+}
+
+.addon-left p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.addon-item {
+  margin-bottom: 30px;
+}
+
+.addon-item h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #222;
+}
+
+.addon-item p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+  text-align: left;
+}
+
+/* ===============================
+   BUY ONLINE
+================================ */
+.buy-online-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  margin-bottom: 90px;
+}
+
+.buy-left h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #222;
+}
+
+.buy-left p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.buy-step {
+  display: flex;
+  gap: 16px;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 18px 0;
+  align-items: flex-start;
+}
+
+.buy-step span {
+  color: #f26522;
+  font-weight: 600;
+  min-width: 18px;
+}
+
+.buy-step p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+  text-align: left;
+}
+
+/* ===============================
+   NCB & IDV
+================================ */
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+.info-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.info-card p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+  text-align: left;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 992px) {
+  .compare-grid,
+  .addon-section,
+  .buy-online-section,
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .compare-item {
+    max-width: 100%;
+  }
+}

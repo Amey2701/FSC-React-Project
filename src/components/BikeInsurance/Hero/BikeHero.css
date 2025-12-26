@@ -1,0 +1,66 @@
+/* =========================
+   BIKE HERO OVERRIDES
+   ========================= */
+
+.bike-hero {
+  background: lightorange;
+}
+
+/* Highlight text */
+.highlight {
+  color: #f26522;
+  font-weight: 700;
+}
+
+/* Horizontal features for bike */
+.horizontal-features {
+  flex-direction: row;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* Bike Illustration */
+.bike-hero-img {
+  position: absolute;
+  bottom: -120px;
+  left: 10;
+  width: 320px;
+  max-width: 100%;
+  pointer-events: none;
+}
+
+/* Links row spacing */
+.bike-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Retrieve quote */
+.retrieve-link {
+  margin: 12px 0;
+}
+
+.retrieve-link a {
+  color: #f26522;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+/* Checkbox links */
+.checkbox-group a {
+  color: #f26522;
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .bike-hero-img {
+    position: static;
+    margin-top: 30px;
+  }
+
+  .horizontal-features {
+    flex-direction: column;
+  }
+}
