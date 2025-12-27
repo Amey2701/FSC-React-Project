@@ -14,6 +14,7 @@ import FactorsAndSavings from "../../components/BikeInsurance/FactorsAndSavings/
 import RenewPolicy from "../../components/BikeInsurance/RenewPolicy/RenewPolicy";
 import BlogArticles from "../../components/BikeInsurance/BlogArticles/BlogArticles";
 import PriceAndComparison from "../../components/BikeInsurance/PriceAndComparison/PriceAndComparison";
+import FAQ from "../../components/BikeInsurance/FAQ/FAQ";
 
 const BikeInsurance = () => {
   useEffect(() => {
@@ -35,6 +36,7 @@ const BikeInsurance = () => {
       <RenewPolicy />
       <PriceAndComparison />
       <BlogArticles />
+      <FAQ />
       <Footer />
     </>
   );
