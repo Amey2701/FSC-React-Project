@@ -1,9 +1,9 @@
 /* =========================
    BIKE HERO OVERRIDES
-   ========================= */
+========================= */
 
 .bike-hero {
-  background: lightorange;
+  background: #fff6f1; /* light peach like ICICI */
 }
 
 /* Highlight text */
@@ -14,16 +14,25 @@
 
 /* Horizontal features for bike */
 .horizontal-features {
+  display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 16px;
   margin-top: 20px;
+}
+
+/* Feature item text */
+.horizontal-features .feature-item {
+  color: #000000;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.6;
 }
 
 /* Bike Illustration */
 .bike-hero-img {
   position: absolute;
   bottom: -120px;
-  left: 10;
+  left: 10px; /* FIXED */
   width: 320px;
   max-width: 100%;
   pointer-events: none;
@@ -53,7 +62,9 @@
   text-decoration: underline;
 }
 
-/* Responsive */
+/* =========================
+   RESPONSIVE
+========================= */
 @media (max-width: 992px) {
   .bike-hero-img {
     position: static;

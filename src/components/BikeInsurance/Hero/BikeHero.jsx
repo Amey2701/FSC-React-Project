@@ -12,12 +12,11 @@ const BikeHero = () => {
           Up to <span className="highlight">93% off</span> on two-wheeler policies<sup>¹</sup>
         </h2>
 
+        {/* FEATURES */}
         <div className="hero-features horizontal-features">
           <div className="feature-item">
-            🤖 AI-backed claims for quick processing
-          </div>
-          <div className="feature-item">
-            🧑‍🦽 Personal Accident cover
+            <span>AI-backed claims for quick processing</span>
+            <span>Personal Accident cover</span>
           </div>
         </div>
 
@@ -69,9 +68,7 @@ const BikeHero = () => {
 
         <div className="checkbox-group">
           <input type="checkbox" defaultChecked />
-          <span>
-            I want to receive updates on WhatsApp
-          </span>
+          <span>I want to receive updates on WhatsApp</span>
         </div>
       </div>
     </section>

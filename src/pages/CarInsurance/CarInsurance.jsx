@@ -6,7 +6,6 @@ import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 
 /* ========= CAR INSURANCE COMPONENTS ========= */
-import ScrollNav from "../../components/CarInsurance/ScrollNav/ScrollNav";
 import Hero from "../../components/CarInsurance/Hero/Hero";
 import Features from "../../components/CarInsurance/Features/Features";
 import InfoSection from "../../components/CarInsurance/InfoSection/InfoSection";
@@ -61,7 +60,6 @@ const CarInsurance = () => {
     <>
 
       <Navbar />
-      <ScrollNav links={handlers} />
 
       <section ref={heroRef}>
         <Hero />

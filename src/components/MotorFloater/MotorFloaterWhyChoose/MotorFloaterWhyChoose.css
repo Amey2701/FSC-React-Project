@@ -1,0 +1,94 @@
+/* =====================================================
+   WHY CHOOSE MOTOR FLOATER
+===================================================== */
+.motor-whychoose {
+  width: 100%;
+  background: #ffffff;
+  padding: 30px 90px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Section Heading */
+.motor-whychoose h2 {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 300;
+  color: #333333;
+  margin-bottom: 60px;
+}
+
+/* =====================================================
+   GRID
+===================================================== */
+.whychoose-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: #f7f9fb;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* =====================================================
+   CARD
+===================================================== */
+.whychoose-card {
+  padding: 40px 30px;
+  text-align: center;
+  border-right: 1px solid #e6e6e6;
+}
+
+.whychoose-card:last-child {
+  border-right: none;
+}
+
+.whychoose-card img {
+  width: 42px;
+  height: auto;
+  margin-bottom: 18px;
+}
+
+.whychoose-card p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #555555;
+}
+
+/* =====================================================
+   RESPONSIVE – TABLET
+===================================================== */
+@media (max-width: 1024px) {
+  .motor-whychoose {
+    padding: 60px 30px;
+  }
+
+  .whychoose-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .whychoose-card {
+    border-right: none;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  .whychoose-card:nth-child(3),
+  .whychoose-card:nth-child(4) {
+    border-bottom: none;
+  }
+}
+
+/* =====================================================
+   RESPONSIVE – MOBILE
+===================================================== */
+@media (max-width: 480px) {
+  .whychoose-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .whychoose-card {
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  .whychoose-card:last-child {
+    border-bottom: none;
+  }
+}

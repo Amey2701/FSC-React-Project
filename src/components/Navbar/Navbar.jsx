@@ -66,61 +66,76 @@ const Navbar = ({ variant = "default" }) => {
 
       {/* ================= MAIN NAV ================= */}
       <div className="nav-main">
+        {/* LOGO → HOME */}
         <div className="nav-logo">
-          <img
-            src="https://www.icicilombard.com/docs/default-source/assets/home-revamp/images/il-logo.png"
-            alt="ICICI Lombard"
-          />
+          <Link to="/" className="logo-link">
+            <img
+              src="https://www.icicilombard.com/docs/default-source/assets/home-revamp/images/il-logo.png"
+              alt="ICICI Lombard"
+            />
+          </Link>
         </div>
 
         <ul className="nav-menu">
           {/* MOTOR INSURANCE */}
           <li
-            className="nav-parent"
+            className={`nav-parent ${
+              showMotorMenu || isMotorRoute ? "active" : ""
+            }`}
             onMouseEnter={openMenu}
             onMouseLeave={closeMenu}
           >
             Motor Insurance ▾
 
-            {(showMotorMenu || isMotorRoute) && (
-              <div
-                className="motor-megamenu"
-                onMouseEnter={openMenu}
-                onMouseLeave={closeMenu}
-              >
-                <div className="motor-item">
-                  <img src="/icons/car.svg" alt="" />
-                  <div>
-                    <Link to="/car-insurance">Car Insurance</Link>
-                    <p>Custom cover for your car</p>
-                  </div>
-                </div>
-
-                <div className="motor-item">
-                  <img src="/icons/bike.svg" alt="" />
-                  <div>
-                    <Link to="/bike-insurance">Bike Insurance</Link>
-                    <p>Custom cover for two wheelers</p>
-                  </div>
-                </div>
-
-                <div className="motor-item">
-                  <img src="/icons/motor.svg" alt="" />
-                  <div>
-                    <Link to="/motor-insurance">Motor Insurance</Link>
-                    <p>Reliable protection for your vehicle</p>
-                  </div>
-                </div>
-
-                <div className="motor-item">
-                  <img src="/icons/floater.svg" alt="" />
-                  <div>
-                    <Link to="/motor-floater">Motor Floater</Link>
-                    <p>Multiple vehicles under one policy</p>
-                  </div>
+            <div
+              className="motor-megamenu"
+              onMouseEnter={openMenu}
+              onMouseLeave={closeMenu}
+            >
+              <div className="motor-item">
+                <img
+                  src="https://static.vecteezy.com/system/resources/thumbnails/020/549/826/small/car-icon-vector.jpg"
+                  alt="Car Insurance"
+                />
+                <div>
+                  <Link to="/car-insurance">Car Insurance</Link>
+                  <p>Custom cover for your car</p>
                 </div>
               </div>
-            )}
+
+              <div className="motor-item">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsi_tZb50P6fFSU321mtZ-IAOVy5AnWGhgQA&s"
+                  alt="Bike Insurance"
+                />
+                <div>
+                  <Link to="/bike-insurance">Bike Insurance</Link>
+                  <p>Custom cover for two wheelers</p>
+                </div>
+              </div>
+
+              <div className="motor-item">
+                <img
+                  src="https://articles.pbpartners.com/images/pb-blog/motor/Motor-Insurance-Buying-Guide.jpg"
+                  alt="Motor Insurance"
+                />
+                <div>
+                  <Link to="/motor-insurance">Motor Insurance</Link>
+                  <p>Reliable protection for your vehicle</p>
+                </div>
+              </div>
+
+              <div className="motor-item">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/256/3997/3997559.png"
+                  alt="Motor Floater"
+                />
+                <div>
+                  <Link to="/motor-floater">Motor Floater</Link>
+                  <p>Multiple vehicles under one policy</p>
+                </div>
+              </div>
+            </div>
           </li>
 
           <li>Health Insurance ▾</li>
