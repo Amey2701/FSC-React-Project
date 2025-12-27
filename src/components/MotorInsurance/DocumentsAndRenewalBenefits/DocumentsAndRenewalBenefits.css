@@ -1,0 +1,133 @@
+.docs-renew-section {
+  padding: 100px 0;
+  background: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.docs-renew-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* ================= TOP ================= */
+
+.docs-renew-top h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #222;
+  text-align: center;
+}
+
+.docs-renew-top p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #444;
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* ROUTE LINKS */
+.route-link {
+  color: #f37021;
+  cursor: pointer;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+/* ================= GRID ================= */
+
+.docs-renew-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 90px;
+  align-items: center;
+  margin-top: 80px;
+}
+
+/* ================= IMAGE ================= */
+
+.docs-renew-image img {
+  width: 100%;
+  max-width: 420px;
+}
+
+/* ================= BENEFITS ================= */
+
+.docs-renew-benefits h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+.docs-renew-benefits ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.docs-renew-benefits li {
+  position: relative;
+  padding-left: 36px; /* space for bitmap */
+  margin-bottom: 26px;
+}
+
+/* 🔶 ICICI BITMAP ICON */
+.docs-renew-benefits li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 18px;
+  height: 18px;
+  background-image: url("https://www.icicilombard.com/docs/default-source/assets/activa-campaign/images/bgdesign.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* TITLE */
+.docs-renew-benefits strong {
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #111;
+}
+
+/* DESCRIPTION */
+.docs-renew-benefits p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #444;
+  margin: 0;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+  .docs-renew-grid {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .docs-renew-image {
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .docs-renew-inner {
+    padding: 0 20px;
+  }
+
+  .docs-renew-top h2 {
+    font-size: 22px;
+  }
+
+  .docs-renew-benefits h3 {
+    font-size: 20px;
+  }
+}

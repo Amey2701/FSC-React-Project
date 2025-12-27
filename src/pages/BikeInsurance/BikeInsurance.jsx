@@ -1,3 +1,4 @@
+import React , {useEffect} from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import BikeHero from "../../components/BikeInsurance/Hero/BikeHero";
@@ -15,6 +16,9 @@ import BlogArticles from "../../components/BikeInsurance/BlogArticles/BlogArticl
 import PriceAndComparison from "../../components/BikeInsurance/PriceAndComparison/PriceAndComparison";
 
 const BikeInsurance = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <Navbar />

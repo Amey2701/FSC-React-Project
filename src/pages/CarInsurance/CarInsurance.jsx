@@ -1,10 +1,9 @@
-import React, { useRef, useCallback } from "react";
+import React, { useRef, useCallback , useEffect } from "react";
 import { useSelector } from "react-redux";
 
 /* ========= GLOBAL COMPONENTS ========= */
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
-import LoginModal from "../../components/CarInsurance/LoginModal/LoginModal";
 
 /* ========= CAR INSURANCE COMPONENTS ========= */
 import ScrollNav from "../../components/CarInsurance/ScrollNav/ScrollNav";
@@ -26,6 +25,9 @@ import DocumentsRequired from "../../components/CarInsurance/DocumentsRequired/D
 import CashlessGarage from "../../components/CarInsurance/CashlessGarage/CashlessGarage";
 
 const CarInsurance = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const show = useSelector((state) => state.auth.showModal);
 
   /* ========= SCROLL REFS ========= */
@@ -57,7 +59,6 @@ const CarInsurance = () => {
 
   return (
     <>
-      {show && <LoginModal />}
 
       <Navbar />
       <ScrollNav links={handlers} />

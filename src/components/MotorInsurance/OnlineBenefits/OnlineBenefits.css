@@ -1,0 +1,83 @@
+/* ================= MAIN WRAPPER ================= */
+
+.online-benefits {
+  background: #faf7f5;
+  padding: 90px 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.online-benefits-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* ================= TITLE ================= */
+
+.online-benefits-title {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 60px;
+  color: #222;
+}
+
+/* ================= GRID ================= */
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px 60px;
+}
+
+/* ================= ITEM ================= */
+
+.benefit-item {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+/* Arrow */
+.arrow {
+  color: #f37021;
+  font-size: 16px;
+  margin-top: 3px;
+  flex-shrink: 0;
+}
+
+/* Text */
+.benefit-item h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #111;
+}
+
+.benefit-item p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #444;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1000px) {
+  .benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .online-benefits-inner {
+    padding: 0 20px;
+  }
+
+  .online-benefits-title {
+    font-size: 22px;
+  }
+}

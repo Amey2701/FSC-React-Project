@@ -6,7 +6,7 @@ const MotorHero = () => {
   const [isNewVehicle, setIsNewVehicle] = useState(false);
 
   return (
-    <section className="motor-hero">
+    <section className="motor-hero" id="motor-hero">
       <div className="motor-hero-inner">
 
         {/* LEFT */}

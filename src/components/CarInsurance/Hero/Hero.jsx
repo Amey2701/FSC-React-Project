@@ -11,17 +11,20 @@ const Hero = () => {
         <p className="subtext">This amount refers to the TP rates only</p>
 
         <div className="hero-features">
-          <div className="feature-item">
-            🛠️ Doorstep Cashless Repairs™
-            <span className="new-tag">NEW</span>
+            <div className="feature-item">
+              🛠️ Doorstep Cashless Repairs™
+              <span className="new-tag">NEW</span>
+            </div>
+
+            <div className="feature-item">
+              🤕 ₹15 lakh Personal Accident Cover
+            </div>
+
+            <div className="feature-item">
+              🏷️ Upto 50% off with NCB
+            </div>
           </div>
-          <div className="feature-item">
-            🤕 ₹15 lakh Personal Accident Cover
-          </div>
-          <div className="feature-item">
-            🏷️ Upto 50% off with NCB
-          </div>
-        </div>
+
 
         {/* Floating Person Image */}
         <img

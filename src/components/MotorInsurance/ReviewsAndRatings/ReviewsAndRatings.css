@@ -1,0 +1,173 @@
+.reviews-section {
+  padding: 40px 0;
+  background: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.reviews-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+/* HEADER */
+.reviews-container h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.rating-summary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 60px;
+}
+
+.rating-number {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.rating-text {
+  text-align: left;
+  font-size: 14px;
+  color: #444;
+}
+
+.rating-text small {
+  font-size: 12px;
+  color: #777;
+}
+
+/* STARS */
+.star {
+  color: #ddd;
+  font-size: 14px;
+}
+
+.star.filled {
+  color: #f37021;
+}
+
+/* SLIDER */
+.reviews-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.nav-btn {
+  background: none;
+  border: 1px solid #ccc;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.reviews-cards {
+  display: flex;
+  gap: 80px;
+  max-width: 900px;
+}
+
+.review-card {
+  max-width: 360px;
+  text-align: left;
+  position: relative;
+}
+
+.review-card::before {
+  content: "“";
+  font-size: 80px;
+  color: #ece7d6;
+  position: absolute;
+  top: -30px;
+  left: -20px;
+}
+
+.review-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.review-card p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #444;
+}
+
+/* DOTS */
+.dots {
+  margin: 30px 0;
+}
+
+.dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: #ddd;
+  border-radius: 50%;
+  margin: 0 4px;
+}
+
+.dot.active {
+  background: #f37021;
+  width: 20px;
+  border-radius: 6px;
+}
+
+/* CTA */
+.read-all-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 28px;
+  border: 1px solid #f37021;
+  border-radius: 30px;
+  color: #f37021;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.read-all-btn:hover {
+  background: #f37021;
+  color: #fff;
+}
+
+/* DISCLAIMER */
+.reviews-disclaimer {
+  margin-top: 80px;
+  text-align: left;
+  font-size: 12px;
+  color: #666;
+  line-height: 1.7;
+}
+
+.reviews-disclaimer h4 {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.reviews-disclaimer p {
+  margin-bottom: 8px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .reviews-cards {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .nav-btn {
+    display: none;
+  }
+}
