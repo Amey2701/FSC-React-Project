@@ -105,7 +105,7 @@ This repository includes UI replicas of the following ICICI Lombard motor insura
 ## 📂 Folder Structure
 
 ```bash
-insurance-portal-ui-clone/
+FSC-React-Project/
 ├── public/
 │   └── images/                 # Static images & icons
 │
@@ -139,13 +139,13 @@ insurance-portal-ui-clone/
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/insurance-portal-ui-clone.git
+git clone https://github.com/your-username/FSC-React-Project.git
 ```
 
 ### 2️⃣ Navigate to the Project Directory
 
 ```bash
-cd insurance-portal-ui-clone
+cd FSC-React-Project
 ```
 
 ### 3️⃣ Install Dependencies
