@@ -1,0 +1,80 @@
+/* SECTION */
+.why-love-section {
+  background: #ffffff; /* IMPORTANT */
+  padding: 90px 0 70px;
+  text-align: center;
+}
+
+/* TITLE */
+.why-love-section h2 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 14px;
+  color: #222;
+}
+
+/* DESCRIPTION */
+.why-desc {
+  max-width: 960px;
+  margin: 0 auto 70px;
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* STATS ROW */
+.why-stats {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+
+/* EACH ITEM */
+.why-item {
+  width: 280px; /* CRITICAL */
+  text-align: center;
+}
+
+/* ORANGE HEADING */
+.why-item h3 {
+  color: #f26522;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+/* GREY SUBTEXT */
+.why-item p {
+  font-size: 15px;
+  color: #555;
+  margin: 0;
+}
+
+/* LINK */
+.link {
+  color: #f26522;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+/* DIVIDER */
+.divider {
+  width: 1px;
+  height: 60px;
+  background: #d9d9d9;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .why-stats {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .divider {
+    display: none;
+  }
+}

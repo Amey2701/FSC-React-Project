@@ -1,0 +1,101 @@
+.key-features-section {
+  padding: 80px 20px;
+  background: #ffffff;
+}
+
+/* Heading */
+.key-features-section h2 {
+  font-size: 34px;
+  font-weight: 600;
+  color: #222;
+  text-align: center;
+  margin-bottom: 40px;
+  line-height: 1.2;
+}
+
+/* Table wrapper */
+.key-features-table {
+  max-width: 1100px;
+  margin: 0 auto;
+  border: 1px solid #dedede;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+/* Table */
+.key-features-table table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+/* Header */
+.key-features-table th {
+  background: #e6e3d5;
+  padding: 20px 28px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #222;
+  text-align: left;
+}
+
+/* Cells */
+.key-features-table td {
+  padding: 18px 28px;
+  font-size: 14px;
+  color: #333;
+  line-height: 1.55;
+  border-bottom: 1px solid #ededed;
+  vertical-align: middle;
+}
+
+/* Alternate rows */
+.key-features-table tbody tr:nth-child(odd) td {
+  background: #f7f7f6;
+}
+
+.key-features-table tbody tr:nth-child(even) td {
+  background: #ffffff;
+}
+
+/* Last row border fix */
+.key-features-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Column width balance */
+.key-features-table th:first-child,
+.key-features-table td:first-child {
+  width: 35%;
+}
+
+.key-features-table th:last-child,
+.key-features-table td:last-child {
+  width: 65%;
+}
+
+/* Superscript */
+.key-features-table sup {
+  font-size: 10px;
+  vertical-align: super;
+  margin-left: 2px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .key-features-section {
+    padding: 60px 16px;
+  }
+
+  .key-features-section h2 {
+    font-size: 28px;
+    margin-bottom: 32px;
+  }
+
+  .key-features-table th,
+  .key-features-table td {
+    padding: 14px 16px;
+    font-size: 13px;
+  }
+}

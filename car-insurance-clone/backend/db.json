@@ -1,0 +1,15 @@
+{
+  "bikeLeads": [],
+  "carLeads": [
+    {
+      "id": "f3bd",
+      "regNo": "mh063423",
+      "mobile": "757134929",
+      "email": "ameymali2@gmail.com",
+      "termsAccepted": true,
+      "whatsappUpdates": true,
+      "createdAt": "2025-12-30T13:13:24.853Z"
+    }
+  ],
+  "motorLeads": []
+}

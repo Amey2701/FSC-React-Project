@@ -1,0 +1,43 @@
+.why-buy-section {
+  background: #cde5f3; /* light blue */
+  display: flex;
+  align-items: center;
+  padding: 60px 100px;
+  gap: 50px;
+}
+
+.why-buy-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.why-buy-img img {
+  max-width: 100%;
+  height: auto;
+}
+
+.why-buy-content {
+  flex: 1;
+}
+
+.why-buy-content h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.why-buy-content .tagline {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.why-buy-content p {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.7;
+  margin-bottom: 15px;
+  text-align: left;
+}

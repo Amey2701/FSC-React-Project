@@ -1,0 +1,115 @@
+.coverage-section {
+  padding: 80px 120px;
+  background: #faf7f5;
+}
+
+.coverage-section h2 {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 40px;
+}
+
+/* Tabs */
+.coverage-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+
+.coverage-tabs button {
+  background: none;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: #777;
+  padding-bottom: 12px;
+  cursor: pointer;
+  position: relative;
+}
+
+.coverage-tabs button.active {
+  color: #ff6a00;
+}
+
+.coverage-tabs button.active::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #ff6a00;
+  border-radius: 2px;
+}
+
+.coverage-divider {
+  height: 1px;
+  background: #ddd;
+  margin: 20px 0 40px;
+}
+
+/* Content */
+.coverage-content h4 {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+.coverage-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px 80px;
+}
+
+.coverage-grid ul {
+  list-style: none;
+  padding: 0;
+}
+
+.coverage-grid li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 16px;
+  font-size: 15px;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Green check */
+.coverage-grid ul:not(.exclude) li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  color: #22c55e;
+  font-size: 14px;
+}
+
+/* Red cross */
+.coverage-grid ul.exclude li::before {
+  content: "✖";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  color: #ef4444;
+  font-size: 14px;
+}
+
+/* Footer */
+.coverage-footer {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+  font-size: 15px;
+}
+
+.coverage-footer a {
+  color: #ff6a00;
+  font-weight: 500;
+  text-decoration: underline;
+}

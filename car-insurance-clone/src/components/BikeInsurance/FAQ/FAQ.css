@@ -1,0 +1,178 @@
+/* =========================
+   FAQ SECTION BASE
+========================= */
+
+.faq-section {
+  background: #faf9f7;
+  padding: 80px 20px;
+  font-family: "Arial", Helvetica, sans-serif;
+}
+
+.faq-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* =========================
+   FAQ TITLE
+========================= */
+
+.faq-title {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 60px;
+}
+
+/* =========================
+   FAQ ITEM
+========================= */
+
+.faq-item {
+  border-bottom: 1px solid #e6e3df;
+}
+
+/* =========================
+   QUESTION BUTTON
+========================= */
+
+.faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 22px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+
+  font-size: 18px;
+  font-weight: 600;
+  color: #1f1f1f;
+  text-align: left;
+
+  transition: color 0.2s ease;
+}
+
+.faq-question:hover {
+  color: #000;
+}
+
+.faq-question.active {
+  color: #000;
+}
+
+/* =========================
+   PLUS / MINUS ICON
+========================= */
+
+.arrow {
+  font-size: 26px;
+  font-weight: 400;
+  color: #222;
+  margin-left: 20px;
+}
+
+/* =========================
+   ANSWER PANEL
+========================= */
+
+.faq-answer {
+  padding: 10px 0 30px 0;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #333;
+}
+
+/* Paragraph spacing */
+.faq-answer p {
+  margin-bottom: 16px;
+}
+
+/* Notes / Disclaimer */
+.faq-note {
+  font-size: 14px;
+  color: #666;
+  margin-top: 16px;
+  font-style: italic;
+}
+
+/* =========================
+   TABLE STYLING (IMAGE 2)
+========================= */
+
+.faq-answer table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 30px 0;
+  background: #ffffff;
+}
+
+/* Header */
+.faq-answer thead th {
+  background: #e6e3d6; /* light beige */
+  color: #000;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 14px 16px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+/* Body cells */
+.faq-answer tbody td {
+  font-size: 15px;
+  color: #222;
+  padding: 14px 16px;
+  border: 1px solid #e2e2e2;
+  vertical-align: top;
+}
+
+/* Zebra rows */
+.faq-answer tbody tr:nth-child(even) {
+  background: #faf9f7;
+}
+
+/* =========================
+   LINKS INSIDE TABLES
+========================= */
+
+.faq-answer a {
+  color: #0a5fc0;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.faq-answer a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+  .faq-title {
+    font-size: 26px;
+    margin-bottom: 40px;
+  }
+
+  .faq-question {
+    font-size: 16px;
+  }
+
+  .arrow {
+    font-size: 22px;
+  }
+
+  .faq-answer {
+    font-size: 15px;
+  }
+
+  .faq-answer table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}

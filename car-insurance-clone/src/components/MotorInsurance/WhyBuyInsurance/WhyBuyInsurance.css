@@ -1,0 +1,172 @@
+/* ================= MAIN SECTION ================= */
+
+.whybuy-section {
+  background: #ffffff;
+  padding: 80px 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.whybuy-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* ================= TITLE ================= */
+
+.whybuy-title {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 48px;
+  color: #222;
+}
+
+/* ================= TOP INFO CARDS ================= */
+
+.whybuy-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border: 1px solid #e6e6e6;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 90px;
+}
+
+/* Card base */
+.whybuy-card {
+  padding: 32px 36px;
+  border-right: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.whybuy-card:nth-child(2n) {
+  border-right: none;
+}
+
+.whybuy-card:nth-last-child(-n + 2) {
+  border-bottom: none;
+}
+
+/* Backgrounds (IMPORTANT FIX) */
+.whybuy-card.light {
+  background: #ffffff;
+}
+
+.whybuy-card.tinted {
+  background: #faf7f5;
+}
+
+/* Inner layout */
+.whybuy-card-inner {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+/* Icon */
+.whybuy-icon {
+  width: 36px;
+  height: 36px;
+  font-size: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Content */
+.whybuy-content h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #111;
+}
+
+.whybuy-content p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* ================= 6 REASONS SECTION ================= */
+
+.six-reasons {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+/* LEFT */
+.six-left h3 {
+  font-size: 26px;
+  font-weight: 400;
+  color: #222;
+  line-height: 1.35;
+}
+
+.six-left span {
+  font-weight: 700;
+}
+
+/* RIGHT */
+.six-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.reason-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 0;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.reason-row:last-child {
+  border-bottom: none;
+}
+
+.reason-row .num {
+  color: #ff5a1f;
+  font-size: 28px;
+  font-weight: 700;
+  min-width: 18px;
+}
+
+.reason-row p {
+  font-size: 15px;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+  .whybuy-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .whybuy-card {
+    border-right: none;
+  }
+
+  .six-reasons {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .whybuy-inner {
+    padding: 0 20px;
+  }
+
+  .whybuy-title {
+    font-size: 22px;
+  }
+
+  .six-left h3 {
+    font-size: 22px;
+  }
+}

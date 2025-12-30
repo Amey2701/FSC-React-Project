@@ -1,0 +1,185 @@
+/* ================= FAQ SECTION ================= */
+.faq-section {
+  background: #fafafa;
+  padding: 40px 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.faq-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.faq-container h2 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 50px;
+  color: #222;
+}
+
+/* ================= FAQ ITEM ================= */
+.faq-item {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+/* ================= ARROW BULLET LIST ================= */
+.arrow-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 12px;
+}
+
+.arrow-list li {
+  position: relative;
+  padding-left: 22px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #444;
+}
+
+.arrow-list li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: gray;
+  font-weight: 600;
+}
+
+/* ================= QUESTION ================= */
+.faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 18px 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: #222;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-question:hover {
+  color: #f37021;
+}
+
+.arrow {
+  font-size: 14px;
+}
+
+/* ================= ANSWER ================= */
+.faq-answer {
+  padding: 0 0 20px;
+  font-size: 14px;
+  color: #444;
+  line-height: 1.7;
+}
+
+.faq-answer ul {
+  margin: 12px 0 0 18px;
+}
+
+.faq-answer li {
+  margin-bottom: 6px;
+}
+
+/* ================= TABLE ================= */
+.faq-answer table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: #ffffff;
+}
+
+/* COMMON CELL STYLES */
+.faq-answer th,
+.faq-answer td {
+  border: 1px solid #e6e6e6;
+  padding: 14px 16px;
+  font-size: 13px;
+  vertical-align: top;
+  color: #333;
+}
+
+/* HEADER */
+.faq-answer th {
+  background: #e6e4d6;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* FIRST COLUMN */
+.faq-answer th:first-child,
+.faq-answer td:first-child {
+  text-align: center;
+  width: 60px;
+}
+
+/* ================= LINKS (POLICY / OTHER PRODUCTS) ================= */
+.faq-answer a {
+  color: #f37021;              /* ICICI orange */
+  text-decoration: underline;
+  font-weight: 500;
+  display: inline-block;
+}
+
+/* SPACE BETWEEN POLICY & OTHER PRODUCTS */
+.faq-answer td a + a {
+  margin-top: 8px;
+}
+
+/* HOVER EFFECT */
+.faq-answer a:hover {
+  color: #c65416;
+  text-decoration: underline;
+}
+
+/* ================= NOTES ================= */
+.idv-note {
+  margin-top: 18px;
+  font-size: 13px;
+  line-height: 1.7;
+  color: #444;
+}
+
+.idv-note p {
+  margin-bottom: 14px;
+}
+
+.idv-formula {
+  font-weight: 600;
+  color: #222;
+}
+
+.idv-disclaimer {
+  font-size: 12px;
+  color: #666;
+  margin-top: 10px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+  .faq-answer table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 600px) {
+  .faq-container h2 {
+    font-size: 22px;
+  }
+
+  .faq-answer th,
+  .faq-answer td {
+    font-size: 12px;
+    padding: 10px;
+  }
+}

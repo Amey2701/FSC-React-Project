@@ -1,0 +1,41 @@
+/* =====================================================
+   MOTOR FLOATER INTRO SECTION
+===================================================== */
+.motor-floater-intro {
+  width: 100%;
+  background: #f8f9fb;
+  padding: 40px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Heading */
+.motor-floater-intro h2 {
+  font-size: 34px;
+  font-weight: 160;
+  color: #333333;
+  margin-bottom: 16px;
+}
+
+/* Description */
+.motor-floater-intro p {
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #666666;
+  
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+@media (max-width: 480px) {
+  .motor-floater-intro h2 {
+    font-size: 26px;
+  }
+
+  .motor-floater-intro p {
+    font-size: 15px;
+  }
+}

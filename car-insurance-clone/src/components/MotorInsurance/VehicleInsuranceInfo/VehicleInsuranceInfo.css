@@ -1,0 +1,139 @@
+/* ================= MAIN WRAPPER ================= */
+
+.vehicle-info {
+  background: #ffffff;
+  padding: 80px 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.vehicle-info-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* ================= ABOUT SECTION ================= */
+
+.about-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  margin-bottom: 90px;
+}
+
+.about-left {
+  flex: 1;
+}
+
+.about-left h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+.about-left p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 14px;
+}
+
+.about-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.about-right img {
+  max-width: 100%;
+}
+
+/* ================= TYPES SECTION ================= */
+
+.types-heading {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 50px;
+  color: #111;
+}
+
+.types-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.type-card {
+  padding: 40px 30px;
+  border-right: 1px solid #e5e5e5;
+  display: flex;
+  flex-direction: column;
+}
+
+.type-card:last-child {
+  border-right: none;
+}
+
+.icon-circle {
+  width: 60px;
+  height: 60px;
+  background: #f3f6fa;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.icon-circle img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.type-card h3 {
+  font-size: 18px;
+  margin-bottom: 14px;
+  color: #111;
+}
+
+.type-card p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 14px;
+}
+
+/* ================= RECOMMENDED TEXT ================= */
+
+.recommend {
+  font-size: 14px;
+  color: #0a4fa3;
+}
+
+.recommend.blue {
+  color: #0a4fa3;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+  .about-section {
+    flex-direction: column;
+  }
+
+  .types-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .type-card {
+    border-right: none;
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  .type-card:last-child {
+    border-bottom: none;
+  }
+}

@@ -1,0 +1,158 @@
+.howbuy-section {
+  padding: 90px 0;
+  background: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.howbuy-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* ================= TITLE ================= */
+
+.howbuy-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 60px;
+  color: #222;
+}
+
+/* ================= STEPS ================= */
+
+.howbuy-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+  margin-bottom: 120px;
+}
+
+.howbuy-step {
+  text-align: center;
+}
+
+.howbuy-step img {
+  height: 50px;
+  margin-bottom: 16px;
+}
+
+.howbuy-step h4 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.howbuy-step p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* Click here */
+.scroll-link {
+  color: #f37021;
+  cursor: pointer;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+/* ================= CLAIM SECTION ================= */
+
+.claim-section {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 80px;
+  align-items: flex-start;
+}
+
+.claim-left h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.claim-left p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #444;
+  text-align: justify;
+}
+
+/* RIGHT */
+.claim-right h4 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #111;
+}
+
+.claim-step {
+  display: flex;
+  gap: 18px;
+  padding: 18px 0;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.claim-step img {
+  width: 28px;
+  height: 28px;
+}
+
+.claim-step h5 {
+  font-size: 15px;
+  margin-bottom: 6px;
+  color: #111;
+}
+
+.claim-step p {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.6;
+}
+
+.claim-footer {
+  font-size: 13px;
+  margin-top: 30px;
+  color: #444;
+}
+
+.claim-footer a {
+  color: #f37021;
+  text-decoration: underline;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+  .howbuy-steps {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .claim-section {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+}
+
+.scroll-link {
+  color: #f37021;
+  cursor: pointer;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+
+@media (max-width: 600px) {
+  .howbuy-inner {
+    padding: 0 20px;
+  }
+
+  .howbuy-title,
+  .claim-left h2 {
+    font-size: 22px;
+  }
+}

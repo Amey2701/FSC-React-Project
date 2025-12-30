@@ -1,0 +1,33 @@
+.price-section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.price-desc {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 24px;
+}
+
+.price-table,
+.compare-table {
+  width: 70%;
+  margin: 0 auto 60px;
+  border-collapse: collapse;
+}
+
+.price-table th,
+.compare-table th {
+  background: #e5e3d3;
+  padding: 12px;
+}
+
+.price-table td,
+.compare-table td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.compare-title {
+  margin-bottom: 18px;
+}

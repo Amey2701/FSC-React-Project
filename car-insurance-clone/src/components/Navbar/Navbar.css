@@ -1,0 +1,182 @@
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ================= NAVBAR WRAPPER ================= */
+.navbar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+
+  position: relative;
+  z-index: 1; /* ABOVE scroll nav */
+}
+
+
+/* ================= VARIANTS ================= */
+.navbar-default {
+  position: relative;
+  z-index: 2;
+}
+
+.navbar-car {
+  position: relative;
+  z-index: 3;
+}
+
+/* ================= TOP BAR ================= */
+.nav-top {
+  background: #f5f5f5;
+  padding: 6px 80px;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-left-sm,
+.nav-right-sm {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.dot {
+  margin: 0 4px;
+}
+
+.live-dot {
+  width: 7px;
+  height: 7px;
+  background: #10c539;
+  border-radius: 50%;
+}
+
+/* ================= BUTTONS ================= */
+.btn-advisor {
+  background: #003a70;
+  color: #fff;
+  border: none;
+  padding: 5px 12px;
+  border-radius: 4px;
+}
+
+.btn-login {
+  background: #d54800;
+  color: #fff;
+  border: none;
+  padding: 5px 12px;
+  border-radius: 4px;
+}
+
+/* ================= MAIN NAV ================= */
+.nav-main {
+  background: linear-gradient(to right, #cb3900, #df7f1a);
+  padding: 10px 80px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: relative;
+  z-index: 4;
+}
+
+/* ================= MENU ================= */
+.nav-menu {
+  display: flex;
+  gap: 26px;
+  list-style: none;
+  color: white;
+  font-size: 14px;
+}
+
+.nav-menu > li {
+  position: relative;
+  cursor: pointer;
+}
+
+/* ================= MOTOR MEGAMENU ================= */
+.nav-parent {
+  position: relative;
+}
+
+/* hover bridge */
+.nav-parent::after {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 100%;
+  width: calc(100% + 40px);
+  height: 20px;
+}
+
+/* DROPDOWN */
+.motor-megamenu {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  width: 420px;
+  background: #fff;
+  border-radius: 14px;
+  padding: 22px 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(6px);
+
+  z-index: 5;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.25);
+  transition: all 180ms ease;
+}
+
+/* SHOW */
+.nav-parent:hover .motor-megamenu,
+.motor-megamenu:hover {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+/* ITEMS */
+.motor-item {
+  display: flex;
+  gap: 14px;
+}
+
+.motor-item img {
+  width: 34px;
+  height: 34px;
+}
+
+.motor-item a {
+  font-weight: 700;
+  text-decoration: none;
+  color: #222;
+}
+
+.motor-item a:hover {
+  color: #d35400;
+}
+
+.motor-item p {
+  font-size: 12px;
+  color: #666;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 1200px) {
+  .nav-top,
+  .nav-main {
+    padding: 10px 40px;
+  }
+}

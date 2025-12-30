@@ -1,0 +1,187 @@
+/* =====================================================
+   BASE RESET
+===================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* =====================================================
+   MAIN FLOATER SECTION
+===================================================== */
+.motor-floater {
+  width: 100%;
+  min-height: 80vh;
+
+  background: linear-gradient(120deg, #041634, #071f44);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  /* Top | Left-Right | Bottom */
+  padding: 80px 190px 20px;
+}
+
+/* =====================================================
+   LEFT CONTENT AREA
+===================================================== */
+.motor-floater-left {
+  max-width: 620px;
+  color: #ffffff;
+  text-align: right;
+}
+
+/* Tag line */
+.motor-floater-tag {
+  font-size: 22px;
+  font-weight: 300;
+  opacity: 0.85;
+}
+
+/* Main heading */
+.motor-floater-title {
+  font-size: 64px;
+  font-weight: 300;
+  margin: 18px 0;
+}
+
+/* Sub heading */
+.motor-floater-subtitle {
+  font-size: 26px;
+  line-height: 1.5;
+  font-weight: 300;
+  opacity: 0.9;
+  margin-bottom: 26px;
+}
+
+/* Info link */
+.motor-floater-link {
+  font-size: 15px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.motor-floater-link span {
+  color: #ff6b1a;
+  text-decoration: underline;
+}
+
+/* =====================================================
+   RIGHT FORM AREA
+===================================================== */
+.motor-floater-right {
+  width: 420px;
+}
+
+.motor-floater-form {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+/* =====================================================
+   FORM FIELD
+===================================================== */
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field label {
+  font-size: 14px;
+  color: #8fa2c0;
+  margin-bottom: 6px;
+}
+
+.form-field label span {
+  color: #ff6b1a;
+}
+
+.form-field input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #425d84;
+  padding: 8px 0;
+
+  font-size: 16px;
+  color: #ffffff;
+  outline: none;
+}
+
+.form-field input:focus {
+  border-bottom-color: #ffffff;
+}
+
+/* =====================================================
+   TERMS & CONDITIONS
+===================================================== */
+.form-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.form-checkbox label {
+  font-size: 14px;
+  color: #8fa2c0;
+}
+
+/* =====================================================
+   CTA BUTTON
+===================================================== */
+.proceed-btn {
+  margin-top: 30px;
+  align-self: flex-end;
+
+  background: #ff6b1a;
+  color: #ffffff;
+  border: none;
+  border-radius: 40px;
+
+  padding: 14px 46px;
+  font-size: 16px;
+
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.proceed-btn:hover {
+  background: #ff823a;
+}
+
+/* =====================================================
+   RESPONSIVE – TABLET & BELOW
+===================================================== */
+@media (max-width: 1024px) {
+  .motor-floater {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 60px 30px 20px;
+    gap: 60px;
+  }
+
+  .motor-floater-right {
+    width: 100%;
+  }
+
+  .proceed-btn {
+    align-self: flex-start;
+  }
+}
+
+/* =====================================================
+   RESPONSIVE – MOBILE
+===================================================== */
+@media (max-width: 480px) {
+  .motor-floater-title {
+    font-size: 48px;
+  }
+
+  .motor-floater-subtitle {
+    font-size: 20px;
+  }
+}

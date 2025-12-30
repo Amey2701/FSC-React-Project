@@ -1,0 +1,141 @@
+/* ===============================
+   SECTION WRAPPER (ICICI STYLE)
+================================ */
+
+.section-content {
+  width: 100%;
+}
+
+.bg-lightgray {
+  background-color: #f5f5f5;
+}
+
+.pad-bottom {
+  padding-bottom: 80px;
+}
+
+/* ===============================
+   CONTAINER
+================================ */
+
+.container.ils {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px 0;
+}
+
+/* ===============================
+   TITLES
+================================ */
+
+.covered-title {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #222;
+}
+
+.covered-subtitle {
+  text-align: center;
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 60px;
+}
+
+/* ===============================
+   GRID
+================================ */
+
+.covered-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px 80px;
+}
+
+/* ===============================
+   ITEM
+================================ */
+
+.covered-item {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.check-icon {
+  color: #28a745;
+  font-size: 20px;
+  margin-top: 4px;
+}
+
+.covered-text h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #222;
+}
+
+.covered-text p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+  text-align: justify;
+}
+
+/* ===============================
+   NOTE
+================================ */
+
+.covered-note {
+  margin-top: 40px;
+  font-size: 15px;
+  color: #666;
+}
+
+/* ===============================
+   DIVIDER
+================================ */
+
+.covered-divider {
+  margin: 40px 0 20px;
+  border: none;
+  border-top: 1px solid #e0e0e0;
+}
+
+/* ===============================
+   POLICY DOCS
+================================ */
+
+.policy-docs {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  font-size: 16px;
+}
+
+.policy-docs span {
+  font-weight: 500;
+  color: #222;
+}
+
+.policy-docs a {
+  color: #f26522;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 992px) {
+  .covered-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .container.ils {
+    padding-top: 60px;
+  }
+}

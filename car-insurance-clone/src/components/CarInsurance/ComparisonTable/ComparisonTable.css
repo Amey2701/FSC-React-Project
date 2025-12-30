@@ -1,0 +1,78 @@
+.comparison-section {
+  padding: 60px 100px;
+  background: #ffffff;
+}
+
+/* Heading */
+.comparison-section h2 {
+  margin-bottom: 40px;
+  font-size: 40px;
+  color: #222;
+  text-align: center;
+}
+
+/* TABLE CONTAINER */
+.table-container {
+  max-width: 1000px;
+  margin: 0 auto 30px auto;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  overflow: hidden; /* IMPORTANT: prevents table overflow */
+  background: #fff;
+}
+
+/* TABLE */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+/* HEADER */
+th {
+  background: #e3e1d4;
+  padding: 18px 20px;
+  font-weight: 600;
+  font-size: 15px;
+  color: #222;
+}
+
+/* BODY CELLS */
+td {
+  padding: 18px 20px;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+  color: #444;
+  line-height: 1.6;
+  background: #ffffff;
+}
+
+/* Alternating rows (subtle) */
+tbody tr:nth-child(even) td {
+  background: #f9f9f9;
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* DESCRIPTION — ALIGNED WITH TABLE */
+.comparison-description {
+  max-width: 1000px; /* SAME as table */
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* Description text */
+.comparison-description p {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+/* Highlighted link text */
+.comparison-description span {
+  color: #ff6a00;
+  font-weight: 500;
+}
